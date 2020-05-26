@@ -1,0 +1,206 @@
+<?php 
+ include_once 'connect_to_server.php';
+ include 'login.php';
+
+
+?>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Roommate Matching Application</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="screen">
+@import url("css/layout.css");
+</style>
+</head>
+<body>
+<div id="layout">
+  <div id="header">
+    <div id="logo"><a href="index.html"><img src="images/log.png"/></a></div>
+     <!-- ^ Logo section -->
+
+    <div class="member_login">
+      <div class="login_box">
+        <form action="#" method="get">
+          <fieldset>
+          <div class="column_1">
+            <label>username :</label>
+            <label>password :</label>
+          </div>
+          <form method="POST" action="login.php">
+          <div class="column_2">
+            <input type="text" name="username_login"/>
+            <input type="password" name="password_login" />
+          </div>
+          <div class="column_3">
+            <input type="submit" src="images/login_btn.gif" class="login"/>
+          </div>
+      </form>
+          <div class="column_4">
+            <label class="password"><a href="contact_us.html">Forgot <br />
+            password</a></label>
+          </div>
+          </fieldset>
+        </form>
+        <!-- ^ Login section of the webpage --> 
+
+      </div>
+    </div>
+  </div>
+  <div id="body_container">
+    <div id="body_container_inner">
+      <div id="menu">
+        <ul>
+          <li class="first"><a class="current" href="index.html">home</a></li>
+          <li><a href="about_us.html">about us</a></li>
+          <li><a href="privacy.html">privacy</a></li>
+          <li><a href="users.html">users</a></li>
+          <li><a href="contact_us.html">contact Us</a></li>
+           <li><a href="register.html">register</a></li>
+        </ul>
+      </div>
+       <!-- ^ Selection Menu -->
+
+      <div class="banner"><a href="#"><img src="images/newbanner.jpg"/> alt="" /></a></div>
+          <!-- ^ The banner -->
+
+      <div class="find_more">
+        <p>Find New Roommate, Fast &amp; Easy<br />
+          <span><a href="register.html">Register Now</a> and take a sneak peak at many available roommates!</span></p>
+      </div>
+            <!-- ^ Website Registration pointer -->
+
+      <div class="container_row">
+        <div class="column_partner">
+          <h2>Search New Roommate</h2>
+          <div class="form_container">
+            <form action="#" method="get">
+              <fieldset>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>I am a</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="gender">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                  <label>Seeking a</label>
+                  <select class="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Looking for a</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>Roommate</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Desired Age</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>16 - 20 yrs.</option>
+                    <option>21 - 25 yrs.</option>
+                    <option>25 - 30 yrs.</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>Desired City</label>
+                </div>
+                <div class="search_column_2">
+                  <select class="date">
+                    <option>Sarajevo</option>
+                    <option>Mostar</option>
+                    <option>Zenica</option>
+                    <option>Banja Luka</option>
+                  </select>
+                </div>
+              </div>
+              <div class="search_row">
+                <div class="search_column_1">
+                  <label>By Profile ID</label>
+                </div>
+                <div class="search_column_2">
+                  <input type="text" name="" value="" />
+                  <label class="check">With Photo</label>
+                  <input type="checkbox" name="" value="" class="checkbox"/>
+                </div>
+              </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="bottom_curve">
+            <p><img src="images/icon_2.gif" alt="" /><a href="#">search now</a></p>
+          </div>
+        </div>
+        <div class="column_profile">
+          <h2>New Posted Profile</h2>
+          <div class="detail">
+            <div class="row">
+              <p class="left">Name :</p>
+              <p class="right">Alma</p>
+            </div>
+            <div class="row_1">
+              <p class="left">Age :</p>
+              <p class="right">21 Years</p>
+            </div>
+            <div class="row">
+              <p class="left">City :</p>
+              <p class="right">Sarajevo, BiH</p>
+            </div>
+            <div class="row_1">
+              <p class="left">Personality :</p>
+              <p class="right">Clever and funny</p>
+            </div>
+            <div class="row">
+              <p class="left">Studing :</p>
+              <p class="right">Software Engineering</p>
+            </div>
+            <div class="row_1">
+              <p class="left">email :</p>
+              <p class="right">alma123@gmail.com</p>
+            </div>
+          </div>
+          <div class="bottom_curve">
+            <p><img src="images/icon.gif" alt="" /><a href="#">more profiles</a></p>
+          </div>
+        </div>
+        <div class="column_photo">
+          <h2>Recently Added Photos</h2>
+          <div class="gallery">
+            <div class="photo_row"> <a href="#"><img src="images/pic_1.gif" alt="" /></a> <a href="#"><img src="images/pic_2.gif" alt="" /></a> <a href="#"><img src="images/pic_3.gif" alt="" /></a> </div>
+            <div class="photo_row"> <a href="#"><img src="images/pic_4.gif" alt="" /></a> <a href="#"><img src="images/pic_5.gif" alt="" /></a> <a href="#"><img src="images/pic_6.gif" alt="" /></a> </div>
+          </div>
+          <div class="bottom_curve">
+            <p><img src="images/icon_3.gif" alt="" /><a href="#">more photo</a></p>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footer_link">
+          <ul style="color:#FFf;">
+            Copyright (c) IUS. All rights reserved. Design by Students of <a href="https://www.ius.edu.ba/bs" style="text-decoration:underline; color:#FFF;">International University of Sarajevo</a>.
+               <!-- ^ footer -->
+               
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
